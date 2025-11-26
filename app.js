@@ -64,6 +64,11 @@ const updateMeshFile = (content) => {
         writer.write_unquoted("texture_normal");
         writer.write_quoted(setting.texture_normal);
 
+        if (setting.texture_specular) {
+          writer.write_unquoted("texture_specular");
+          writer.write_quoted(setting.texture_specular);
+        }
+
         if (setting.texture) {
           writer.write_unquoted("texture");
           writer.write_object_start();
