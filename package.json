@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@types/node": "^24.10.1",
+    "jomini": "^0.9.1"
+  }
+}
